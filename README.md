@@ -39,15 +39,15 @@ Current enterprise DNS namespace: `corp.treysecuritylab.com`.
 
 1. [Module 01 — Linux Fundamentals](Module-01-Linux-Fundamentals/)
 2. [Module 02 — Linux Security](Module-02-Linux-Security/)
-3. Module 03 — Linux Networking & Host Firewalling
-4. Module 04 — Bash & Security Automation
-5. Module 05 — Linux Logging, Monitoring & Auditing
-6. Module 06 — Linux Service & Application Security
-7. Module 07 — Linux Hardening & Vulnerability Management
-8. Module 08 — Linux Containers & Isolation
-9. Module 09 — Linux DFIR & Threat Hunting
-10. Module 10 — Linux Incident Response
-11. Module 11 — Linux Security Final Capstone
+3. [Module 03 — Linux Networking & Host Firewalling](Module-03-Linux-Networking-and-Host-Firewalling/)
+4. [Module 04 — Bash & Security Automation](Module-04-Bash-and-Security-Automation/)
+5. [Module 05 — Linux Logging, Monitoring & Auditing](Module-05-Linux-Logging-Monitoring-and-Auditing/)
+6. [Module 06 — Linux Service & Application Security](Module-06-Linux-Service-and-Application-Security/)
+7. [Module 07 — Linux Hardening & Vulnerability Management](Module-07-Linux-Hardening-and-Vulnerability-Management/)
+8. [Module 08 — Linux Containers & Isolation](Module-08-Linux-Containers-and-Isolation/)
+9. [Module 09 — Linux DFIR & Threat Hunting](Module-09-Linux-DFIR-and-Threat-Hunting/)
+10. [Module 10 — Linux Incident Response](Module-10-Linux-Incident-Response/)
+11. [Module 11 — Linux Security Final Capstone](Module-11-Linux-Security-Final-Capstone/)
 
 ## SOC Analyst Curriculum
 
