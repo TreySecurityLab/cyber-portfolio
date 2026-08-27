@@ -1,66 +1,70 @@
 # Cybersecurity Portfolio
 
-This repository documents structured, hands-on Cybersecurity lab exercises focused on Linux security, networking, offensive security, detection, forensics, Azure, Microsoft Defender, Microsoft Sentinel, and incident response.
+This repository documents two structured, hands-on cybersecurity curricula built around verified lab work and portfolio-quality evidence.
+
+## Courses
+
+### Linux Security
+
+A 77-lab Linux-focused progression covering Linux fundamentals, host security, networking, Bash automation, logging, service security, hardening, containers, DFIR, threat hunting, incident response, and final security capstones.
+
+Existing completed Linux labs remain in their current root-level module paths so their Git history, evidence, screenshots, and links are preserved.
+
+### SOC Analyst — Detection, Adversary Tactics & Incident Handling
+
+A separate 77-lab SOC curriculum covering SOC operations, network security monitoring, Windows/Active Directory monitoring, Linux telemetry, SIEM and detection engineering, controlled adversary tactics, endpoint investigation, PowerShell, malware analysis, threat hunting, attack reconstruction, cloud/identity monitoring, and incident handling.
+
+SOC labs are published beneath [`SOC-Analyst/`](SOC-Analyst/) to keep their independent Lab 01–77 numbering separate from the Linux course.
 
 ## Lab Environment
 
-The lab is built as a segmented cybersecurity environment supporting enterprise infrastructure, defensive security monitoring, offensive security testing, virtualization, and network security.
+The portfolio uses a segmented home-lab environment designed to support enterprise infrastructure, Linux security, SOC monitoring, controlled adversary simulation, virtualization, and incident investigation.
 
-### Physical Infrastructure
+Operational status is evidence-driven: a planned host, VM, agent, sensor, telemetry path, security platform, or cloud integration is not represented as operational until it has been configured and verified.
 
-| System | Platform | Memory | Role |
-|---|---|---:|---|
-| Enterprise Virtualization Host | Proxmox VE | 32 GB | Hosts enterprise servers, Windows endpoints, and application workloads |
-| Security Virtualization Host | Proxmox VE | 32 GB | Hosts SIEM, network monitoring, and DFIR/security workloads |
-| Management Host | Dedicated Laptop | 16 GB | Trusted workstation for infrastructure administration and management |
-| Redteam Host | Kali Linux | 16 GB | Dedicated offensive security and penetration-testing workstation |
-| SW-Lab-01 | Aruba J9774A | — | Managed Layer 2 switch providing VLAN segmentation and traffic mirroring |
-| opnsense-fw | OPNsense | 8 GB | Bare-metal firewall providing routing, VLAN gateways, filtering, and network security |
-
-### Enterprise Virtualization Host
-
-| Virtual Machine | RAM | Purpose |
-|---|---:|---|
-| Windows Server / DC01 | 4 GB | Active Directory Domain Services and DNS |
-| Ubuntu Server | 4 GB | Linux administration, security, and monitoring target |
-| Web Server | 2 GB | DMZ-hosted web application and security testing target |
-| Windows 11 | 8 GB | Domain-joined enterprise workstation and security-testing endpoint |
-| File Server | 4 GB | Windows file services, permissions, SMB, and enterprise access-control testing |
-
-### Security Virtualization Host
-
-| Virtual Machine | RAM | Purpose |
-|---|---:|---|
-| Wazuh SIEM/XDR | 8 GB | Centralized security monitoring, log analysis, detection, and alerting |
-| Network Security Monitoring | 8 GB | Suricata IDS and Zeek network telemetry and traffic analysis |
-| DFIR / Threat Hunting | 4 GB | Velociraptor-based endpoint investigation, threat hunting, and incident response |
+Current enterprise DNS namespace: `corp.treysecuritylab.com`.
 
 ### Network Segmentation
 
 | VLAN | Name | Purpose |
-|---:|---|---|
-| 10 | MANAGEMENT | Infrastructure administration and trusted management traffic |
-| 20 | USERS | User workstations and domain endpoints |
-| 30 | DMZ | Internet-facing and security-testing server workloads |
-| 40 | SECOPS | Security monitoring and defensive infrastructure |
-| 50 | SERVERS | Internal enterprise server infrastructure |
-| 60 | REDTEAM | Offensive security and adversary-simulation systems |
+| ---: | --- | --- |
+| 10 | MANAGEMENT | Infrastructure administration |
+| 20 | USERS | Simulated enterprise endpoints |
+| 30 | DMZ | Isolated application/web services |
+| 40 | SECOPS | Monitoring, detection, and investigation |
+| 50 | SERVERS | Enterprise server infrastructure |
+| 60 | REDTEAM | Controlled adversary simulation |
 
-## Curriculum
+## Linux Security Curriculum
 
 1. [Module 01 — Linux Fundamentals](Module-01-Linux-Fundamentals/)
 2. [Module 02 — Linux Security](Module-02-Linux-Security/)
-3. [Module 03 — Networking](Module-03-Networking/)
-4. [Module 04 — Offensive Security](Module-04-Offensive-Security/)
-5. [Module 05 — Detection and Forensics](Module-05-Detection-and-Forensics/)
-6. [Module 06 — Cloud Fundamentals](Module-06-Cloud-Fundamentals/)
-7. [Module 07 — Azure Security](Module-07-Azure-Security/)
-8. [Module 08 — Microsoft Defender](Module-08-Microsoft-Defender/)
-9. [Module 09 — Microsoft Sentinel](Module-09-Microsoft-Sentinel/)
-10. [Module 10 — Incident Response](Module-10-Incident-Response/)
-11. [Module 11 — Final Capstone](Module-11-Final-Capstone/)
+3. [Module 03 — Linux Networking & Host Firewalling](Module-03-Linux-Networking-and-Host-Firewalling/)
+4. [Module 04 — Bash & Security Automation](Module-04-Bash-and-Security-Automation/)
+5. [Module 05 — Linux Logging, Monitoring & Auditing](Module-05-Linux-Logging-Monitoring-and-Auditing/)
+6. [Module 06 — Linux Service & Application Security](Module-06-Linux-Service-and-Application-Security/)
+7. [Module 07 — Linux Hardening & Vulnerability Management](Module-07-Linux-Hardening-and-Vulnerability-Management/)
+8. [Module 08 — Linux Containers & Isolation](Module-08-Linux-Containers-and-Isolation/)
+9. [Module 09 — Linux DFIR & Threat Hunting](Module-09-Linux-DFIR-and-Threat-Hunting/)
+10. [Module 10 — Linux Incident Response](Module-10-Linux-Incident-Response/)
+11. [Module 11 — Linux Security Final Capstone](Module-11-Linux-Security-Final-Capstone/)
+
+## SOC Analyst Curriculum
+
+See [`SOC-Analyst/`](SOC-Analyst/) for the independent 77-lab **SOC Analyst — Detection, Adversary Tactics & Incident Handling** course.
+
+## Standards and Curriculum Sources
+
+Shared lab documentation rules live under [`Standards/`](Standards/).
+
+Authoritative curricula and progress files are maintained under `Curriculum/` so numbering, scope, and completion state remain explicit and independently controlled.
 
 ## Completed Modules
 
+### Linux Security
+
 ✅ [Module 01 — Linux Fundamentals](Module-01-Linux-Fundamentals/)
 
+### SOC Analyst — Detection, Adversary Tactics & Incident Handling
+
+No module is complete yet.
